@@ -1,0 +1,65 @@
+.section-3 
+   
+
+
+
+.process
+    margin-bottom: 4rem
+    @include mobile
+        margin-bottom: 2rem
+   
+
+.process__ol 
+    display: flex 
+    flex-direction: column 
+    row-gap: 3rem
+    counter-reset: custom-counter
+    margin: 0 
+    padding: 0
+    @include mobile
+        row-gap: 1rem
+
+
+.process__li
+    counter-increment: custom-counter  
+
+.process__accordion 
+    padding: 2rem 4rem 
+    background-color: white
+    border-radius: 5rem 
+    box-shadow: 0 .1rem .3rem  $color-violet-dark
+    
+        
+   
+    @include mobile
+        padding: 1.2rem 1.7rem 
+.process__accordion-header 
+    display: flex 
+    justify-content: space-between 
+    align-items: center 
+    column-gap: 5rem 
+    cursor: pointer 
+    user-select: none
+
+.process__title
+    font-size: 1.5rem 
+    color: $color-violet-dark
+    display: flex 
+    align-items: center 
+    column-gap: 2rem
+    &::before
+        content: "0" counter(custom-counter)
+        font-size: 2em
+.process__span 
+
+.process__acordion-body 
+    font-size: 1.3rem
+    color:  $color-violet-dark
+    margin-top: 1rem
+    padding-top: 2rem
+    border-top: 1px solid $color-violet-dark
+    @include mobile
+        margin-top: 1rem
+        padding-top: 1rem
+
+

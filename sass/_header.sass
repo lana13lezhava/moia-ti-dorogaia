@@ -1,0 +1,66 @@
+.header
+    padding-top: 2rem
+   
+    @include Desktop
+        padding-top: 1rem
+    @include mobile
+        padding-top:.7rem 
+        margin-bottom: 1rem
+        
+    &__box
+        display: flex 
+        align-items: center 
+        column-gap: 7rem
+        @include Desktop
+            column-gap:4rem
+        
+    &__logo
+        font-size: 2.4rem 
+        font-weight: 800
+        color: $color-violet-dark
+        text-shadow: 0 .1rem .4rem  $color-violet-light
+        @include mobile
+            font-size: 3rem
+
+    &__menu 
+        margin-left: auto
+        @include mobile 
+            display: none 
+        
+    &__menu-list
+        display: flex
+        align-items: center
+        column-gap: 4rem
+        font-size: 1.8rem
+        
+        @include Desktop
+           column-gap: 2rem  
+
+    &__menu-link
+        color:$color-violet-dark
+        font-weight: 600
+        transition-duration: .2s
+        
+        &:hover,&.active
+            font-weight: 800
+            color: $color-violet-light
+        &.active
+            border-bottom: solid .1rem   $color-violet-light
+
+.header__button
+    border: none
+    padding: 1rem 1rem
+    border-radius: 4rem
+    background-color: $color-violet-dark
+    color: white 
+    transition-duration:  .4s 
+    &:hover
+        background-color: $color-violet-light
+        color:  #fff
+    @include mobile 
+        display: none
+   
+            
+   
+
+    

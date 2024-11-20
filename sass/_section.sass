@@ -1,0 +1,164 @@
+.content
+    
+     
+
+.container
+     
+.content__header
+    display: flex 
+    justify-content: space-around
+    margin-bottom: 3rem
+    @include tablet
+        flex-direction: column 
+        text-align: center
+        margin-bottom: .1rem
+.title
+    font-size: 2.6rem
+    color:  $color-violet-dark
+    @include tablet 
+        margin-bottom: .1rem
+.text 
+    font-size: 2rem 
+    color: $color-violet-dark
+
+
+
+.content__bady
+
+    
+.services
+    &__li
+        
+        transition: all .2s
+        &:hover
+            transform: scale(1)
+            
+           
+    &:hover &__li:not(:hover)
+        transform: scale(.60)
+        
+        
+
+
+        
+
+    
+    
+    
+    
+.services__ul
+    padding: 0 
+    margin: 0
+    display: grid 
+    grid-template-columns: repeat(3, 1fr)
+    gap: 2rem
+    
+    
+
+    @include Desktop
+        grid-template-columns: repeat(2, 1fr)
+        gap: 1.3rem 
+    @include mobile
+        grid-template-columns: repeat(1 , 1fr) 
+        gap: 1rem 
+  
+
+    
+   
+
+
+
+    
+.service__box
+    display: flex 
+    justify-content: space-between 
+    text-shadow: 0 .3rem .8rem #ffffff88
+    box-shadow: 0 .2rem .7rem 0  $color-violet-dark
+    min-height: 18rem 
+    width: 42rem
+    padding: 3rem 
+    background-color: white 
+    color: $color-violet-dark
+    border-radius: 3rem
+   
+        
+        
+    
+    @include Desktop
+        width: 100%
+   
+        
+       
+.service_color
+    background-color: #803f7bd0
+         
+.service__text
+    
+    display: flex 
+    flex-direction: column 
+    justify-content: space-between
+    
+   
+
+ 
+.services__h3 
+    font-size: 1.8rem
+.service_color-h3
+    color: $color-violet-dark
+    background-color: #fff 
+    box-shadow: 0 .1rem .3rem  $color-violet-dark
+    text-shadow: 0 .3rem .8rem  $color-violet-dark
+    
+        
+ 
+
+
+.services__a 
+    cursor: pointer
+    font-size: 1.5rem  
+    
+    transition-duration: .1s 
+    &:hover
+        font-weight: 600
+     
+.services__img 
+    width: 44%
+///banner////R
+
+
+.banner
+    display: flex 
+    flex-direction: column
+    
+    
+    
+    align-items: start 
+    padding: 1.5rem 2rem
+    
+   
+    
+    @include tablet
+        width: 100% 
+        height: 100%
+.banner__h3 
+    font-size: 2.3rem 
+    font-weight: 800
+    margin-bottom: .3rem
+    color:$color-violet-dark 
+    
+    
+
+.banner__p 
+    font-size: 1.5rem 
+    wont-weight:200
+    color: $color-violet-dark
+    transition-duration: .2s
+    &:hover,&.active
+        color: $color-violet-light
+    
+ 
+
+
+   
+    
+   
